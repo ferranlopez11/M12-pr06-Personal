@@ -4,13 +4,20 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 
+import { FormsModule } from '@angular/forms';
+import { SearchNursesComponent } from './search_nurses/search-nurses.component';
+import { RouterModule } from '@angular/router';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    SearchNursesComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    FormsModule,
+    RouterModule,
+    AppRoutingModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
